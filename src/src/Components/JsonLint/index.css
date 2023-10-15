@@ -1,0 +1,52 @@
+.json-lint-container {
+    margin: 10rem;
+    text-align: center;
+  }
+  
+  .json-textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    color: #333; /* Color for the text inside the textarea */
+  }
+  
+  .json-textarea::placeholder {
+    color: #ccc; /* Color for the placeholder text */
+  }
+  
+  
+  .json-lint-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .json-lint-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .error {
+    color: #ff0000;
+    margin-top: 10px;
+  }
+  
+  .formatted-json {
+    margin-top: 10px;
+    align-items: left;
+  }
+  
+  .formatted-json pre {
+    white-space: pre-wrap;
+  }
+  
+  .json-text {
+    text-align: left;
+  }
