@@ -26,7 +26,7 @@ const JsonLintComponent = () => {
 
   return (
     <div className="json-lint-container">
-      <h2>JSON Lint</h2>
+      <h1>JSON Lint</h1>
       <textarea
         className="json-textarea"
         placeholder="Enter JSON here"

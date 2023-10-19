@@ -1,10 +1,11 @@
 .textarea-container {
     margin: 10rem;
+    
   }
   
   .custom-textarea {
     width: 100%;
-    height: 450px;
+    height: 300px;
     padding: 10px;
     font-size: 1rem;
     border: 2px solid #3498db;
@@ -12,3 +13,6 @@
     box-sizing: border-box;
   }
   
+  /* .wordCountTitle{
+    text-align: center;
+  } */

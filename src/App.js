@@ -2,6 +2,7 @@ import "./App.css";
 
 import Header from "./Components/Header";
 import JsonLintComponent from "./Components/JsonLint";
+import Sidebar from "./Components/Sidebar/Sidebar";
 import TextArea from "./Components/TextArea";
 import WordCountTitle from "./Components/WordCount";
 import logo from "./logo.svg";
@@ -13,15 +14,17 @@ function App() {
 
   return (
     <div className="App">
-      <Header activeOption={activeOption} setActiveOption={setActiveOption} />
+      <Sidebar activeOption={activeOption} setActiveOption={setActiveOption} />
+      {/* <Header activeOption={activeOption} setActiveOption={setActiveOption} /> */}
+      <div className="main">
       {activeOption === "wordCounter" ? (
         <>
-          <TextArea setCount={setCount} />
-          <WordCountTitle count={count} />
+          <TextArea setCount={setCount} count={count} />
         </>
       ) : (
         <JsonLintComponent />
       )}
+      </div>
     </div>
   );
 }
