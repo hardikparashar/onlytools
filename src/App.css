@@ -5,6 +5,11 @@
 
 .main {
   margin-left:200px;
+  background-image: url('/public/icons-gray-bg.svg');
+  background-repeat: repeat;
+  height:100%;
+  width:100%;
+  position: fixed;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
