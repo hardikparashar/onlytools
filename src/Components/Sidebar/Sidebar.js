@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './Sidebar.module.css';
+import './Sidebar.scss';
+var logo = require("../../assets/logo.png")
 
 const Sidebar = ({ activeOption, setActiveOption }) => {
   const navigationItems = [
@@ -23,14 +24,15 @@ const Sidebar = ({ activeOption, setActiveOption }) => {
     console.log("Selected option:", option);
   };
   return (
-    <div className={styles.sidebar}>
+    <div className={'sidebar'}>
+              <img src={logo} height="200px" width="200px"/>
       <ul style={{padding:"10px"}}>
         {navigationItems.map((item, index) => (
           <li key={index}>
-            <a onClick={() => handleOptionClick(item.icon)} className={`${item.icon === activeOption ? styles.active :''} ${styles.navigationItem}`}
+            <a onClick={() => handleOptionClick(item.icon)} className={`${item.icon === activeOption ? 'active' :''} ${'navigationItem'}`}
             >
-              <i className={`${styles.icon}`}>{item.name}</i>
-              <span className={styles.tooltip}>{item.tooltip}</span>
+              <i className={`${'icon'}`}>{item.name}</i>
+              <span className={'tooltip'}>{item.tooltip}</span>
             </a>
           </li>
         ))}
