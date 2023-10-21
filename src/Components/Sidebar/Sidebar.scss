@@ -1,0 +1,54 @@
+@import "../../styles/main.scss";
+.sidebar {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #ccc;
+     ul {
+      list-style-type: none;
+      margin-top:100px;
+    }
+  }
+  
+  .navigationItem {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 12px 10px;
+    color: white;
+    text-decoration: none;
+  
+    &:hover {
+      border:1px solid white;
+    }
+    &.active{
+      background-color:cornflowerblue;
+      color:black;
+    }
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: $primaryFont;
+    font-style: normal;
+  }
+  
+  .tooltip {
+    display: none;
+  }
+  
+  .navigationItem:hover .tooltip {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

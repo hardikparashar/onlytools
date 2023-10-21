@@ -1,12 +1,16 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+.main {
+  margin-left:200px;
+  background-image: url('/public/icons-gray-bg.svg');
+  background-repeat: repeat;
+  height:100%;
+  width:100%;
+  position: fixed;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
